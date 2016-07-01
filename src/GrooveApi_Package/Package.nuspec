@@ -15,7 +15,6 @@
       A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.
     </summary>
     <language>en-US</language>
-    <projectUrl>https://nuget.org/packages/GrooveApi</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://raw.githubusercontent.com/loqu8/GrooveApi/master/LICENSE.txt</licenseUrl>
     <projectUrl>https://github.com/loqu8/GrooveApi</projectUrl>
