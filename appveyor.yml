@@ -46,9 +46,9 @@ before_build:
 build:
   project: C:\projects\grooveapi\src\GrooveApi_vs2015.sln
   verbosity: minimal
-test: on
-test_script:
-- ps: nunit3-console C:\projects\grooveapi\src\Tests\bin\Release\Tests.dll --result=myresults.xml;format=AppVeyor --framework:net-4.5
+#test: on
+#test_script:
+#- ps: nunit3-console C:\projects\grooveapi\src\Tests\bin\Release\Tests.dll --result=myresults.xml;format=AppVeyor #--framework:net-4.5
 test:
   assemblies: '**\*tests.dll'
 artifacts:
