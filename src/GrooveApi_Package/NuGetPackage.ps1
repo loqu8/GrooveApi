@@ -264,9 +264,9 @@ if (Test-Path *.nupkg) {
     Write-Log "Creating backup..." -ForegroundColor Green
 
     Get-ChildItem *.nupkg | ForEach-Object { 
-        # Move-Item $_.Name ($_.Name + ".bak") -Force
-        Remove-Item $_.Name -Force
-        #Write-Log ("Renamed " + $_.Name + " to " + $_.Name + ".bak")
+        Move-Item $_.Name ($_.Name + ".bak") -Force
+        #Remove-Item $_.Name -Force
+        Write-Log ("Renamed " + $_.Name + " to " + $_.Name + ".bak")
     }
 }
 
@@ -279,7 +279,7 @@ Write-Log "Creating package..." -ForegroundColor Green
 
 # Create symbols package if any .pdb files are located in the lib folder
 If ((Get-ChildItem *.pdb -Path .\lib -Recurse).Count -gt 0) {
-    $packageTask = Create-Process .\NuGet.exe ("pack Package.nuspec -Version $version -Symbol -Verbosity Detailed")
+    $packageTask = Create-Process .\NuGet.exe ("pack Package.nuspec -Version f -Symbol -Verbosity Detailed")
     $packageTask.Start() | Out-Null
     $packageTask.WaitForExit()
             
