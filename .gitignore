@@ -87,7 +87,7 @@ ipch/
 $tf/
 
 # nuget files
-/ZendeskApi_v2_Package/lib
+/GrooveApi_Package/lib
 
 # Guidance Automation Toolkit
 *.gpState
@@ -208,4 +208,6 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
-/src/ZendeskApi_v2_Package/lib
+/src/GrooveApi_Package/lib
+
+NuGet.exe.old
