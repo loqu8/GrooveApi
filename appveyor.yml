@@ -40,7 +40,7 @@ nuget:
 before_build:
 - ps: >-
 
-	pwd
+    pwd
 
     cd "C:\projects\grooveapi\src"
 
