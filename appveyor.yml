@@ -42,7 +42,7 @@ before_build:
 
     pwd
 
-    cd "C:\projects\grooveapi\src"
+    cd src
 
     nuget.exe restore
 build:
