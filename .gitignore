@@ -211,3 +211,5 @@ FakesAssemblies/
 /src/GrooveApi_Package/lib
 
 NuGet.exe.old
+*.nupkg.bak
+
