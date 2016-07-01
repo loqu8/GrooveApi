@@ -8,5 +8,9 @@ namespace GrooveApi
 {
     class GrooveClass1
     {
+        public GrooveClass1()
+        {
+
+        }
     }
 }
