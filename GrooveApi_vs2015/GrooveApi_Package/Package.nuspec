@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>GrooveApi</id>
+    <version>$version$</version>
+    <title>GrooveApi</title>
+    <authors>tofutim</authors>
+    <owners>Loqu8</owners>
+    <description>
+      C# wrapper for Groove's api.
+    </description>
+    <releaseNotes>
+    </releaseNotes>
+    <summary>
+      A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.
+    </summary>
+    <language>en-US</language>
+    <projectUrl>https://nuget.org/packages/GrooveApi</projectUrl>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <copyright>Copyright 2016</copyright>
+    <dependencies>
+      <group targetFramework="netstandard1.1">
+        <!--<dependency id="log4net" version="1.2.10" />-->
+      </group>
+    </dependencies>
+    <references></references>
+    <tags></tags>
+  </metadata>
+  <files>
+    <file src="lib\" target="lib" />
+    <file src="tools\" target="tools" />
+    <file src="content\" target="content" />
+  </files>
+</package>
