@@ -4,7 +4,7 @@ Groove Api
 [![Join the chat at https://gitter.im/loqu8/GrooveApi](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/loqu8/GrooveApi?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build status](https://ci.appveyor.com/api/projects/status/on8ac5531jotb2qc?svg=true)](https://ci.appveyor.com/project/loqu8/grooveapi)
 [![NuGet Version](https://img.shields.io/nuget/v/GrooveApi.svg)](https://www.nuget.org/packages/GrooveApi/)
-[![MyGet Prerelease](https://img.shields.io/myget/grooveapi_prerelease/vpre/GrooveApi.svg?label=MyGet_Prerelease)](https://www.myget.org/feed/grooveapi_prerelease/package/nuget/GrooveApi)
+[![MyGet Prerelease](https://img.shields.io/myget/loqu8/vpre/GrooveApi.svg?label=MyGet_Prerelease)](https://www.myget.org/feed/loqu8/package/nuget/GrooveApi)
 
 This is a client for [Groove's REST api](https://www.groovehq.com/docs). 
 
