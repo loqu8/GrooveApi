@@ -40,6 +40,8 @@ nuget:
 before_build:
 - ps: >-
 
+	pwd
+
     cd "C:\projects\grooveapi\src"
 
     nuget.exe restore
@@ -48,7 +50,7 @@ build:
   verbosity: minimal
 #test: on
 #test_script:
-#- ps: nunit3-console C:\projects\grooveapi\src\Tests\bin\Release\Tests.dll --result=myresults.xml;format=AppVeyor #--framework:net-4.5
+#- ps: nunit3-console C:\projects\grooveapi\src\Tests\bin\Release\Tests.dll --result=myresults.xml;format=AppVeyor --framework:net-4.5
 test:
   assemblies: '**\*tests.dll'
 artifacts:
