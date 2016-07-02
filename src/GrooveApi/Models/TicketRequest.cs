@@ -14,7 +14,8 @@ namespace GrooveApi.Models
 
         public string From {
             get {
-                return string.IsNullOrEmpty(_from) ? getAttributesHash() : _from;
+                var result = string.IsNullOrEmpty(_from) ? getAttributesHash() : _from;
+                return result;
             }
             set
             {
@@ -28,7 +29,8 @@ namespace GrooveApi.Models
         public string To
         {
             get {
-                return string.IsNullOrEmpty(_to) ? getAttributesHash() : _to;
+                var result = string.IsNullOrEmpty(_to) ? getAttributesHash() : _to;
+                return result;
             }
             set
             {

@@ -1,6 +1,9 @@
 ﻿using Refit;
 using System;
 using System.Net.Http;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Serialization;
 
 namespace GrooveApi
 {
@@ -13,6 +16,14 @@ namespace GrooveApi
                     new AuthenticatedHttpClientHandler(token))
                 {
                     BaseAddress = new Uri("https://api.groovehq.com/v1")
+                }, 
+                new RefitSettings
+                {
+                    JsonSerializerSettings = new JsonSerializerSettings
+                    {
+//                        ContractResolver = new CamelCasePropertyNamesContractResolver(),
+                        Converters = { new StringEnumConverter() }
+                    }
                 });
         }
 

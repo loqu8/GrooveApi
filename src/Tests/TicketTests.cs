@@ -12,15 +12,14 @@ namespace Tests
         private IGrooveApi api = GrooveApiFactory.Create(Settings.Token);
 
         [Test]
-        public async Task CanCreateTicket()
+        public async Task CanCreateSimpleTicket()
         {
             var ticket = await api.CreateTicket(new TicketRequest()
             {
                 To = "support@loqu8.com",
-                Email = "torque@gmail.com",
-                Name = "Tim Uy",
+                From = "torque@gmail.com",
                 Subject = "GrooveApi",
-                Body = "Checking to see if this works."
+                Body = "Checking to see if this works.",
             });
 
             Assert.IsNotNull(ticket);
