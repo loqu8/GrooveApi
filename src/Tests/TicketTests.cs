@@ -16,31 +16,18 @@ namespace Tests
         {
             var ticket = await api.CreateTicket(new TicketRequest()
             {
-                To = "support@loqu8.com",
-                From = "torque@gmail.com",
-                Subject = "GrooveApi",
-                Body = "Checking to see if this works.",
+                to = "support@loqu8.com",
+                from = new Customer
+                {
+                    email = "sal@test.com",
+                    name = "Sal",
+                    about = "a good friend"
+                },
+                subject = "GrooveApi",
+                body = "Checking to see if this works.",
             });
 
             Assert.IsNotNull(ticket);
         }
-
-        [Test]
-        public async Task CanCreateComplexTicket()
-        {
-            var ticket = await api.CreateTicket(new TicketRequest()
-            {
-                To = "support@loqu8.com",
-                From = "torque@gmail.com",
-                Subject = "GrooveApi",
-                Body = "Checking to see if this works.",
-                Email = "torque@gmail.com",
-                FirstName = "Tim",
-                LastName = "Uy"
-            });
-
-            Assert.IsNotNull(ticket);
-        }
-
     }
 }

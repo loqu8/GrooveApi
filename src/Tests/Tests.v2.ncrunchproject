@@ -28,10 +28,10 @@
       <TestName>Tests.TicketTests.CanCreateTicket</TestName>
     </NamedTestSelector>
     <NamedTestSelector>
-      <TestName>Tests.TicketTests.CanCreateSimpleTicket</TestName>
+      <TestName>Tests.TicketTests.CanCreateComplexTicket</TestName>
     </NamedTestSelector>
     <NamedTestSelector>
-      <TestName>Tests.TicketTests.CanCreateComplexTicket</TestName>
+      <TestName>Tests.TicketTests.CanCreateSimpleTicketWithAttributes</TestName>
     </NamedTestSelector>
   </IgnoredTests>
 </ProjectConfiguration>
