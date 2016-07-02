@@ -12,6 +12,7 @@ namespace GrooveApi.Models
     {
         private string _from;
 
+        [AliasAs("from")]
         public string From {
             get {
                 var result = string.IsNullOrEmpty(_from) ? getAttributesHash() : _from;
@@ -26,6 +27,7 @@ namespace GrooveApi.Models
 
         private string _to;
 
+        [AliasAs("to")]
         public string To
         {
             get {
@@ -39,6 +41,7 @@ namespace GrooveApi.Models
             }
         }
 
+        [AliasAs("body")]
         public string Body { get; set; }           // required
         public string Assigned_Group { get; set; }
         public string Assignee { get; set; }
@@ -46,11 +49,13 @@ namespace GrooveApi.Models
         public bool Note { get; set; }
         public bool Send_Copy_To_Customer { get; set; }
         public TicketState State { get; set; }
+        [AliasAs("subject")]
         public string Subject { get; set; }
 
         // Customer attributes
         public string Email { get; set; }
-        public string Name { get; set; }
+        public string First_Name { get; set; }
+        public string Last_Name { get; set; }
         public string About { get; set; }
         public string Twitter_Username { get; set; }
         public string Title { get; set; }
@@ -61,7 +66,7 @@ namespace GrooveApi.Models
 
         private string getAttributesHash()
         {
-            var target = string.Concat(Email, Name, About, Twitter_Username, Title, Company_Name, Location, LinkedIn_Username);
+            var target = string.Concat(Email, First_Name, Last_Name, About, Twitter_Username, Title, Company_Name, Location, LinkedIn_Username);
             return CalculateSha1Hash(target);
         }
 

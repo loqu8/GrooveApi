@@ -18,6 +18,10 @@ namespace Tests
             {
                 To = "support@loqu8.com",
                 From = "torque@gmail.com",
+                //Email = "torque@gmail.com",
+                //First_Name = "Tim",
+                //Last_Name = "Uy",
+//                About = "Hello",
                 Subject = "GrooveApi",
                 Body = "Checking to see if this works.",
             });
