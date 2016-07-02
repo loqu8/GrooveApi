@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GrooveApi
+namespace GrooveApi.Models
 {
-    class GrooveClass1
+    public enum TicketState
     {
-        public GrooveClass1()
-        {
-
-        }
+        Unread,
+        Opened,
+        Pending,
+        Closed,
+        Spam
     }
 }
