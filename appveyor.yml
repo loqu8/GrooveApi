@@ -11,7 +11,7 @@ install:
     
     $versionInfo | % { foreach ($property in $_.PSObject.Properties) { Set-AppveyorBuildVariable -Name "GitVersion_$($property.Name)" -Value "$($_.PSObject.properties[$property.Name].Value)"    }}
     
-    $script_versionNumber = "$($versionInfo.FullSemVer).build.$($env:APPVEYOR_BUILD_ID)"
+    $script_versionNumber = "$($versionInfo.NuGetVersionV2).build.$($env:APPVEYOR_BUILD_ID)"
     
     Update-AppveyorBuild -Version $script_versionNumber
     
