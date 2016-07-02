@@ -8,6 +8,6 @@ namespace GrooveApi
     {
         [Post("/tickets")]
         [Headers("Authorization: Bearer")]
-        Task<Ticket> CreateTicket([Body(BodySerializationMethod.UrlEncoded)] TicketRequest ticket);
+        Task<Ticket> CreateTicket([Body] TicketRequest ticket);
     }
 }
