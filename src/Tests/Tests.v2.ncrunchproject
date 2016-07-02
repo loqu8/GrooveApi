@@ -33,5 +33,6 @@
     <NamedTestSelector>
       <TestName>Tests.TicketTests.CanCreateSimpleTicketWithAttributes</TestName>
     </NamedTestSelector>
+    <AllTestsSelector />
   </IgnoredTests>
 </ProjectConfiguration>
