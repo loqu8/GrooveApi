@@ -8,9 +8,9 @@ namespace GrooveApi.Models
 {
     public class Customer
     {
-        public string email { get; set; }
-        public string name { get; set; }
-        public string about { get; set; }
+        public string Email { get; set; }
+        public string Name { get; set; }
+        public string About { get; set; }
         public string TwitterUsername { get; set; }
         public string Title { get; set; }
         public string CompanyName { get; set; }

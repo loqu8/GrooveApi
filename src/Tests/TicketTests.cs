@@ -16,15 +16,15 @@ namespace Tests
         {
             var ticket = await api.CreateTicket(new TicketRequest()
             {
-                to = "support@loqu8.com",
-                from = new Customer
+                To = "support@loqu8.com",
+                From = new Customer
                 {
-                    email = "sal@test.com",
-                    name = "Sal",
-                    about = "a good friend"
+                    Email = "sal@test.com",
+                    Name = "Sal",
+                    About = "a good friend"
                 },
-                subject = "GrooveApi",
-                body = "Checking to see if this works.",
+                Subject = "GrooveApi",
+                Body = "Checking to see if this works.",
             });
 
             Assert.IsNotNull(ticket);

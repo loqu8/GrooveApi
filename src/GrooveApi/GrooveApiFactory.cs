@@ -21,7 +21,7 @@ namespace GrooveApi
                 {
                     JsonSerializerSettings = new JsonSerializerSettings
                     {
-//                        ContractResolver = new CamelCasePropertyNamesContractResolver(),
+                        ContractResolver = new SnakeCase.JsonNet.SnakeCaseContractResolver(),
                         Converters = { new StringEnumConverter() }
                     }
                 });
