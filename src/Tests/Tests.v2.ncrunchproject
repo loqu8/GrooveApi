@@ -30,5 +30,8 @@
     <NamedTestSelector>
       <TestName>Tests.TicketTests.CanCreateSimpleTicket</TestName>
     </NamedTestSelector>
+    <NamedTestSelector>
+      <TestName>Tests.TicketTests.CanCreateComplexTicket</TestName>
+    </NamedTestSelector>
   </IgnoredTests>
 </ProjectConfiguration>

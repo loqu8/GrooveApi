@@ -43,30 +43,46 @@ namespace GrooveApi.Models
 
         [AliasAs("body")]
         public string Body { get; set; }           // required
-        public string Assigned_Group { get; set; }
+        [AliasAs("assigned_group")]
+        public string AssignedGroup { get; set; }
+        [AliasAs("assignee")]
         public string Assignee { get; set; }
-        public DateTime Sent_At { get; set; }
+        [AliasAs("sent_at")]
+        public DateTime? SentAt { get; set; }
+        [AliasAs("note")]
         public bool Note { get; set; }
-        public bool Send_Copy_To_Customer { get; set; }
+        [AliasAs("send_copy_to_customer")]
+        public bool SendCopyToCustomer { get; set; }
+        [AliasAs("state")]
         public TicketState State { get; set; }
         [AliasAs("subject")]
         public string Subject { get; set; }
 
         // Customer attributes
+        [AliasAs("email")]
         public string Email { get; set; }
-        public string First_Name { get; set; }
-        public string Last_Name { get; set; }
+        [AliasAs("first_name")]
+        public string FirstName { get; set; }
+        [AliasAs("last_name")]
+        public string LastName { get; set; }
+        [AliasAs("about")]
         public string About { get; set; }
-        public string Twitter_Username { get; set; }
+        [AliasAs("twitter_username")]
+        public string TwitterUsername { get; set; }
+        [AliasAs("title")]
         public string Title { get; set; }
-        public string Company_Name { get; set; }
-        public string Phone_Number { get; set; }
+        [AliasAs("company_name")]
+        public string CompanyName { get; set; }
+        [AliasAs("phone_number")]
+        public string PhoneNumber { get; set; }
+        [AliasAs("location")]
         public string Location { get; set; }
-        public string LinkedIn_Username { get; set; }
+        [AliasAs("linkedIn_username")]
+        public string LinkedInUsername { get; set; }
 
         private string getAttributesHash()
         {
-            var target = string.Concat(Email, First_Name, Last_Name, About, Twitter_Username, Title, Company_Name, Location, LinkedIn_Username);
+            var target = string.Concat(Email, FirstName, LastName, About, TwitterUsername, Title, CompanyName, Location, LinkedInUsername);
             return CalculateSha1Hash(target);
         }
 
