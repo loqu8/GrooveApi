@@ -21,7 +21,7 @@ namespace Tests
                 {
                     Email = "sal@test.com",
                     Name = "Sal",
-                    About = "a good friend"
+                    About = "a good friend from Alger"
                 },
                 Subject = "GrooveApi",
                 Body = "Checking to see if this works.",
