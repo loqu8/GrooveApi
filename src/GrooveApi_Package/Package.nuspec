@@ -21,7 +21,10 @@
     <copyright>Copyright 2016</copyright>
     <dependencies>
       <group targetFramework="netstandard1.1">
-        <!--<dependency id="log4net" version="1.2.10" />-->
+        <dependency id="modernhttpclient" version="2.4.2" />
+        <dependency id="Newtonsoft.Json" version="9.0.1" />
+        <dependency id="refit" version="2.4.1" />
+        <dependency id="SnakeCase.JsonNet_Portable" version="1.1.0" />
       </group>
     </dependencies>
     <references></references>
